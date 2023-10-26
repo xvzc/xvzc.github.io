@@ -148,6 +148,8 @@
   },
   "active": "eb23a8764074fcdf",
   "lastOpenFiles": [
+    "assets/css/_override.scss",
+    "assets/css/_comment.scss",
     "assets/css/_partial/_single/_comment.scss",
     "assets/css/_partial/_single",
     "assets/css/_partial",
