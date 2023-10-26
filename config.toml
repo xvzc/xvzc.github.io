@@ -549,4 +549,3 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   taxonomyTerm = ["HTML"]
-
