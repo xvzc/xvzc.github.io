@@ -23,7 +23,7 @@ copyright = ""
 # whether to use robots.txt
 enableRobotsTXT = true
 # whether to use git commit log
-enableGitInfo = true
+# enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 
@@ -70,7 +70,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # site default theme ["auto", "light", "dark"]
   defaultTheme = "auto"
   # public git repo url only then enableGitInfo is true
-  gitRepo = "https://github.com/xvzc/xvzc.github.io"
+  # gitRepo = "https://github.com/xvzc/xvzc.github.io"
   #  which hash function used for SRI, when empty, no SRI is used
   # ["sha256", "sha384", "sha512", "md5"]
   fingerprint = ""
