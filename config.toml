@@ -34,7 +34,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [author]
   name = "xvzc"
   email = "dev.kwanghoo@gmail.com"
-  link = ""
+  link = "https://github.com/xvzc"
 
 # Menu config
 [menu]

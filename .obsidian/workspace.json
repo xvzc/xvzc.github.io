@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c5ab536bebdeafc3",
+        "id": "dc07670f799a1d9a",
         "type": "tabs",
         "children": [
           {
-            "id": "eb23a8764074fcdf",
+            "id": "0e9e1a097a98604d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/posts/first_post.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/first_post.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/first_post.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "content/posts/first_post.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eb23a8764074fcdf",
+  "active": "0e9e1a097a98604d",
   "lastOpenFiles": [
+    "content/posts/first_post.md",
     "i18n/en.toml",
     "assets/css/_custom.scss",
     "assets/css/_override.scss",
@@ -156,7 +149,6 @@
     "assets/css/_partial/_single",
     "assets/css/_partial",
     "assets/css",
-    "content/posts/first_post.md",
     "assets/images/avatar.jpeg"
   ]
 }
