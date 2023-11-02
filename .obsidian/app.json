@@ -1,5 +1,6 @@
 {
-  "attachmentFolderPath": "assets/images",
+  "attachmentFolderPath": "assets/attachments",
   "vimMode": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "tabSize": 2
 }

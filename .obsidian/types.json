@@ -1,0 +1,10 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "draft": "checkbox",
+    "t": "multitext",
+    "date": "text"
+  }
+}

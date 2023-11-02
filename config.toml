@@ -4,7 +4,7 @@ baseURL = "http://xvzc.github.io/"
 theme = "LoveIt"
 
 # website title
-title = "blog.xvzc.dev"
+title = "xvzc.dev"
 
 # language code ["en", "zh-CN", "fr", "pl", ...]
 languageCode = "en"
@@ -57,14 +57,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     name = "Tags"
     url = "/tags/"
     title = ""
-  [[menu.main]]
-    weight = 3
-    identifier = "categories"
-    pre = ""
-    post = ""
-    name = "Categories"
-    url = "/categories/"
-    title = ""
+  # [[menu.main]]
+  #   weight = 3
+  #   identifier = "categories"
+  #   pre = ""
+  #   post = ""
+  #   name = "Categories"
+  #   url = "/categories/"
+  #   title = ""
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -77,7 +77,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  date format
   dateFormat = "2006-01-02"
   # website title for Open Graph and Twitter Cards
-  title = "blog.xvzc.dev"
+  title = "xvzc.dev"
   # website description for RSS, SEO, Open Graph and Twitter Cards
   description = ""
   # website images for Open Graph and Twitter Cards
@@ -112,7 +112,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     #  whether to show copyright info
     copyright = true
     #  whether to show the author
-    author = true
+    author = false
     # Site creation time
     since = 2023
     # license info (HTML format is supported)
@@ -121,7 +121,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   #  Section (all posts) page config
   [params.section]
     # special amount of posts in each section page
-    paginate = 20
+    paginate = 40
     # date format (month and day)
     dateFormat = "01-02"
     # amount of RSS pages
@@ -183,9 +183,9 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "avatar.jpeg"
+      avatarURL = "/avatar.jpeg"
       #  title shown in home page (HTML format is supported)
-      title = "blog.xvzc.dev"
+      # title = "xvzc.dev"
       # subtitle shown in home page (HTML format is supported)
       subtitle = "I write code."
       # whether to use typeit animation for subtitle
@@ -206,6 +206,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Social config about the author
   [params.social]
     GitHub = "xvzc"
+    Email = "dev.kwanghoo@gmail.com"
     # Linkedin = ""
     # Twitter = "xxxx"
     # Instagram = "xxxx"
@@ -278,7 +279,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # HackTheBox = ""
     # RootMe= ""
     # Phone = ""
-    # Email = "xxxx@xxxx.com"
     # RSS = true # 
 
   #  Page global config
@@ -308,7 +308,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #  whether to keep the static table of the contents in front of the post
       keepStatic = false
       # whether to make the table of the contents in the sidebar automatically collapsed
-      auto = true
+      auto = false
     #  KaTeX mathematical formulas
     [params.page.math]
       enable = true
@@ -327,7 +327,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
-      maxShownLines = 50
+      maxShownLines = 200
     #  Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS

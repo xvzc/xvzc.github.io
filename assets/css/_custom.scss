@@ -6,3 +6,14 @@
     max-height: 1.5em;
   }
 }
+
+.toc .toc-content ul ul {
+    padding-left: 0.8rem;
+}
+
+.toc .toc-content ul a:first-child::before {
+    content: "•";
+    font-weight: bolder;
+    margin-right: 0.5rem;
+    color: #2d96bd;
+}
