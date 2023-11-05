@@ -433,7 +433,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # image URL
     image = ""
     # thumbnail URL
-    thumbnailUrl = ""
+    thumbnailUrl = "/avatar.jpeg"
 
   #  Analytics config
   [params.analytics]
