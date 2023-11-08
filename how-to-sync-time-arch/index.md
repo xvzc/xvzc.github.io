@@ -16,3 +16,5 @@ $ sudo timedatectl set-ntp true
 ```
 
 If you had followed the instruction above, you would be able to see your system time was finely synchronized.
+
+![](20231108-135630.png)

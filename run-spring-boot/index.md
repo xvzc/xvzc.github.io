@@ -24,3 +24,4 @@ $ java -jar -Dserver.port=9004 ./target/user-service-0.0.1-SNAPSHOT.jar
 ```
 
 > `applicaion.yml` 에서 `server.port=0`을 할당하면 매 실행 마다 **랜덤한 포트**로 실행됩니다.
+
