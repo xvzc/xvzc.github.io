@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "81ee327edb064cb2",
+            "id": "8a9793702075ab94",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/2023/11/how-to-sync-time-arch.md",
+                "file": "templates/post-template.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 421.5
   },
   "right": {
     "id": "89e3d5a9fc5dc97d",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/2023/11/how-to-sync-time-arch.md",
+                "file": "templates/post-template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/2023/11/how-to-sync-time-arch.md",
+                "file": "templates/post-template.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/2023/11/how-to-sync-time-arch.md"
+                "file": "templates/post-template.md"
               }
             }
           }
@@ -154,47 +154,52 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81ee327edb064cb2",
+  "active": "8a9793702075ab94",
   "lastOpenFiles": [
-    "templates/post-template.md",
-    "content/posts/2023/03/aws-403-inside-vpc.md",
-    "content/posts/2023/11/how-to-sync-time-arch.md",
-    "content/posts/2021/10/spring-boot-controller.md",
-    "content/posts/2023/11/.md",
-    "content/posts/2021/10/boj-15829.md",
-    "content/posts/2023/11",
-    "2023-11-03.md",
-    "content/posts/2023/11/11.md",
-    "content/posts/2023/11",
-    "content/posts/2021/12/boj-1062.md",
-    "content/posts/2021/12/boj-20210.md",
-    "content/posts/2021/11/boj-1107.md",
-    "content/posts/2021/11/boj-1389.md",
-    "content/posts/2021/11/boj-1697.md",
-    "content/posts/2021/11/boj-2042.md",
-    "content/posts/2021/11/boj-2357.md",
-    "content/posts/2021/11/boj-11057.md",
-    "content/posts/2021/11/boj-1927.md",
-    "content/posts/2021/11/boj-2606.md",
-    "content/posts/2021/11/boj-7516.md",
-    "content/posts/2021/11/boj-11279.md",
-    "content/posts/2021/11/boj-11723.md",
-    "content/posts/2021/11/boj-2667.md",
-    "content/posts/2021/11/boj-5525.md",
-    "content/posts/2021/10/boj-2805.md",
-    "content/posts/2021/10/boj-1074.md",
-    "content/posts/2021/10/run-spring-boot.md",
-    "content/posts/2023/03",
-    "content/posts/2023/02",
-    "content/posts/2022/12",
-    "content/posts/2022/04",
-    "content/posts/2022/03",
-    "content/posts/2022/02",
-    "content/posts/2022/01",
-    "content/posts/2022/06",
-    "assets/attachments/Pasted image 20231029234439.png",
-    "Pasted image 20231027202151.png",
-    "Pasted image 20231027202207.png",
-    "assets/images/avatar.jpeg"
+    "content/posts/2023/03/aws-403-inside-vpc/index.md",
+    "content/posts/2023/03/aws-403-inside-vpc",
+    "content/posts/2023/02/tf-vpc-peering-err/index.md",
+    "content/posts/2023/02/tf-vpc-peering-err",
+    "content/posts/2023/02/tf-object-changed-outside/index.md",
+    "content/posts/2023/02/tf-object-changed-outside",
+    "content/posts/2022/12/aws-push-img-to-ecr/index.md",
+    "content/posts/2022/12/aws-push-img-to-ecr",
+    "content/posts/2022/10/openvpn-docker/index.md",
+    "content/posts/2022/10/openvpn-docker",
+    "content/posts/2022/06/mysql-create-dates/index.md",
+    "content/posts/2022/06/mysql-create-dates",
+    "content/posts/2022/04/prog-92334/index.md",
+    "content/posts/2022/04/prog-92334",
+    "content/posts/2022/04/prog-86051/index.md",
+    "content/posts/2022/04/prog-86051",
+    "content/posts/2022/04/prog-81301/index.md",
+    "content/posts/2022/04/prog-81301",
+    "content/posts/2022/04/prog-77484/index.md",
+    "content/posts/2022/04/prog-77484",
+    "content/posts/2022/04/prog-76501/index.md",
+    "content/posts/2022/04/prog-72410/index.md",
+    "content/posts/2022/04/prog-70128/index.md",
+    "content/posts/2022/04/prog-67256/index.md",
+    "content/posts/2022/04/prog-64061/index.md",
+    "content/posts/2022/04/prog-42889/index.md",
+    "content/posts/2022/04/prog-42862/index.md",
+    "content/posts/2022/04/prog-42840/index.md",
+    "content/posts/2022/04/prog-42748/index.md",
+    "content/posts/2022/04/prog-42576/index.md",
+    "content/posts/2022/04/prog-12977/index.md",
+    "content/posts/2022/03/boj-3135/index.md",
+    "content/posts/2022/03/boj-2637/index.md",
+    "content/posts/2022/03/boj-2056/index.md",
+    "content/posts/2022/03/boj-1051/index.md",
+    "content/posts/2022/02/boj-11689/index.md",
+    "content/posts/2023/11/how-to-sync-time-arch/image-1.png",
+    "content/posts/2023/11/how-to-sync-time-arch/image.png",
+    "content/posts/2023/11/how-to-sync-time-arch/Pasted image 20231114174544.png",
+    "assets/2023-11-how-to-sync-time-arch.png",
+    "assets/img/2023-11-how-to-sync-time-arch.png",
+    "assets/img/2023-11-how-to-sync-time-arch-3.png",
+    "assets/img/2023-11-how-to-sync-time-arch-2.png",
+    "assets/img/2023-11-how-to-sync-time-arch-1.png",
+    "assets/img/2023-11-{[fileName}}.png"
   ]
 }

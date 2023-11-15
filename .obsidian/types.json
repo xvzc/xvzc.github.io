@@ -5,6 +5,7 @@
     "tags": "tags",
     "draft": "checkbox",
     "t": "multitext",
-    "date": "text"
+    "date": "text",
+    "resources": "multitext"
   }
 }

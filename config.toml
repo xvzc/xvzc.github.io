@@ -1,4 +1,4 @@
-baseURL = "http://blog.xvzc.dev/"
+baseURL = "https://blog.xvzc.dev/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"

@@ -1,6 +1,10 @@
 {
-  "attachmentFolderPath": "assets/attachments",
+  "attachmentFolderPath": "./",
   "vimMode": true,
   "showUnsupportedFiles": true,
-  "tabSize": 2
+  "tabSize": 2,
+  "newLinkFormat": "shortest",
+  "useMarkdownLinks": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
