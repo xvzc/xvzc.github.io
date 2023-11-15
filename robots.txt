@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: http://blog.xvzc.dev/sitemap.xml
+Sitemap: https://blog.xvzc.dev/sitemap.xml
