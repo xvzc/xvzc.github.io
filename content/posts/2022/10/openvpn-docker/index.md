@@ -14,63 +14,29 @@ export OVPN_DATA="/home/{username}/openvpn"
 ```
 
 ---
-
-## OpenVPN 설정 생성하기
+## OpenVPN 설정 및 실행
 
 ```bash
 docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://{HOST}
-```
 
----
-
-## CA와 서버 Key 생성하기
-
-passphrase 없이 생성하려면 마지막에 `nopass` 옵션 추가
-
-```bash
 docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
-```
 
----
-
-## OpenVPN 실행하기
-
-```bash
 docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN kylemanna/openvpn
 ```
 
----
-
-## 클라이언트 유저 생성하는 법
+## 사용법
 
 ```bash
-docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full {USER_NAME} nopass
+docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full {USER_NAME} nopass # 클라이언트 생성
+
+docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient {USER_NAME}> {USER_NAME}.ovpn # ovpn 파일 가져오기
+
+docker run --rm -it -v $OVPN_DATA:/etc/openvpn kylemanna/openvpn ovpn_revokeclient {USER_NAME} remove # 클라이언트 삭제
+
+docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openvpn/openvpn.conf # OpenVPN 설정 열기
 ```
 
----
-
-## ovpn 파일 생성하는 법
-
-```bash
-docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient {USER_NAME}> {USER_NAME}.ovpn
-```
-
----
-
-## 클라이언트 삭제하는 법
-
-```bash
-docker run --rm -it -v $OVPN_DATA:/etc/openvpn kylemanna/openvpn ovpn_revokeclient {USER_NAME} remove
-```
-
----
-
-## 설정 파일 여는 법
-
-```bash
-docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openvpn/openvpn.conf
-```
-
+## 설정 파일 예시
 ```bash
 ...
 duplicate-cn # enable multiple connections with sigle cert
