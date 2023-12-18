@@ -9,7 +9,7 @@
 <span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
 <i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Table of Contents</h2><div class="toc-content always-active" id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Neovim lspconfig 깔끔하게 관리하기</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=https://github.com/xvzc title=Author target=_blank rel="noopener noreffer author" class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>xvzc</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2023-12-19>2023-12-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;403 words&nbsp;
 <i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;2 minutes&nbsp;</div></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Table of Contents</span>
-<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#디렉토리-구조>디렉토리 구조</a></li><li><a href=#편집기-설정>편집기 설정</a></li><li><a href=#공통-설정>공통 설정</a></li><li><a href=#언어별-설정>언어별 설정</a></li><li><a href=#플러그인-매니저-설정>플러그인 매니저 설정</a></li></ul></nav></div></div><div class=content id=content><p>neovim <code>lspconfig</code>는 언어별 설정이 많아짐에 따라 라인 수가 너무 길어져서 점점 감당이 안되는 경향이있어요. 이번 포스트에서는 lspconfig를 깔끔하게 관리하는 방법에 대해서 알아보겠습니다.</p><h1 id=디렉토리-구조>디렉토리 구조</h1><p>먼저, 디렉토리 구조는 다음과 같이 구성했습니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><ul><li><a href=#디렉토리-구조>디렉토리 구조</a></li><li><a href=#편집기-설정>편집기 설정</a></li><li><a href=#공통-설정>공통 설정</a></li><li><a href=#언어별-설정>언어별 설정</a></li><li><a href=#플러그인-매니저-설정>플러그인 매니저 설정</a></li></ul></li></ul></nav></div></div><div class=content id=content><p>neovim <code>lspconfig</code>는 언어별 설정이 많아짐에 따라 라인 수가 너무 길어져서 점점 감당이 안되는 경향이있어요. 이번 포스트에서는 lspconfig를 깔끔하게 관리하는 방법에 대해서 알아보겠습니다.</p><h2 id=디렉토리-구조>디렉토리 구조</h2><p>먼저, 디렉토리 구조는 다음과 같이 구성했습니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -29,7 +29,7 @@
 </span></span><span class=line><span class=cl>            └── languages
 </span></span><span class=line><span class=cl>                ├── cpp.lua
 </span></span><span class=line><span class=cl>                └── typescript.lua
-</span></span></code></pre></td></tr></table></div></div><h1 id=편집기-설정>편집기 설정</h1><p><code>lspconfig/init.lua</code> 파일에서 <code>vim.diagnstic</code>, <code>vim.lsp.*</code> 관련 설정을 기록하고, <code>lspconfig/lanuages</code> 하위의 lua 설정 파일을 일괄적으로 불러오는 코드를 작성합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><h2 id=편집기-설정>편집기 설정</h2><p><code>lspconfig/init.lua</code> 파일에서 <code>vim.diagnstic</code>, <code>vim.lsp.*</code> 관련 설정을 기록하고, <code>lspconfig/lanuages</code> 하위의 lua 설정 파일을 일괄적으로 불러오는 코드를 작성합니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -59,7 +59,7 @@
 </span></span><span class=line><span class=cl><span class=kr>for</span> <span class=n>_</span><span class=p>,</span> <span class=n>file</span> <span class=kr>in</span> <span class=n>ipairs</span><span class=p>(</span><span class=n>vim.fn</span><span class=p>.</span><span class=n>readdir</span><span class=p>(</span><span class=n>config_dir</span><span class=p>,</span> <span class=s>[[v:val =~ &#39;\.lua$&#39;]]</span><span class=p>))</span> <span class=kr>do</span>
 </span></span><span class=line><span class=cl>  <span class=n>require</span><span class=p>(</span><span class=s1>&#39;plugins.lspconfig.languages.&#39;</span> <span class=o>..</span> <span class=n>file</span><span class=p>:</span><span class=n>gsub</span><span class=p>(</span><span class=s1>&#39;%.lua$&#39;</span><span class=p>,</span> <span class=s1>&#39;&#39;</span><span class=p>))</span>
 </span></span><span class=line><span class=cl><span class=kr>end</span>
-</span></span></code></pre></td></tr></table></div></div><h1 id=공통-설정>공통 설정</h1><p><code>common.lua</code>에 공통적으로 사용할 녀석들을 만들어서 table에 담아 리턴해줍니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><h2 id=공통-설정>공통 설정</h2><p><code>common.lua</code>에 공통적으로 사용할 녀석들을 만들어서 table에 담아 리턴해줍니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -85,7 +85,7 @@
 </span></span><span class=line><span class=cl>  <span class=n>on_attach</span> <span class=o>=</span> <span class=n>on_attach</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>  <span class=n>capabilities</span> <span class=o>=</span> <span class=n>capabilities</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><h1 id=언어별-설정>언어별 설정</h1><p>이제 <code>lspconfig/languages</code> 디렉토리에 언어별 설정을 분리해서 작성합니다. 아래는 <code>cpp</code>, <code>typescript</code>에 설정 대한 예시입니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span></span></code></pre></td></tr></table></div></div><h2 id=언어별-설정>언어별 설정</h2><p>이제 <code>lspconfig/languages</code> 디렉토리에 언어별 설정을 분리해서 작성합니다. 아래는 <code>cpp</code>, <code>typescript</code>에 설정 대한 예시입니다.</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
 </span><span class=lnt> 2
 </span><span class=lnt> 3
 </span><span class=lnt> 4
@@ -169,7 +169,7 @@
 </span></span><span class=line><span class=cl>    <span class=s1>&#39;--stdio&#39;</span><span class=p>,</span>
 </span></span><span class=line><span class=cl>  <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><h1 id=플러그인-매니저-설정>플러그인 매니저 설정</h1><p>이제 마지막으로 플러그인 설정에 다음과 같이 입력하면 끝!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span></span></code></pre></td></tr></table></div></div><h2 id=플러그인-매니저-설정>플러그인 매니저 설정</h2><p>이제 마지막으로 플러그인 설정에 다음과 같이 입력하면 끝!</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
 </span><span class=lnt>2
 </span><span class=lnt>3
 </span><span class=lnt>4

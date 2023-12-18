@@ -3,7 +3,7 @@
 neovim `lspconfig`는 언어별 설정이 많아짐에 따라 라인 수가 너무 길어져서 점점 감당이 안되는 경향이있어요. 이번 포스트에서는 lspconfig를 깔끔하게 관리하는 방법에 대해서 알아보겠습니다.
 <!--more-->
 
-# 디렉토리 구조 
+## 디렉토리 구조 
 먼저, 디렉토리 구조는 다음과 같이 구성했습니다.
 ```
 ~/.config/nvim
@@ -18,7 +18,7 @@ neovim `lspconfig`는 언어별 설정이 많아짐에 따라 라인 수가 너�
                 └── typescript.lua
 ```
 
-# 편집기 설정
+## 편집기 설정
 `lspconfig/init.lua`  파일에서 `vim.diagnstic`, `vim.lsp.*` 관련 설정을 기록하고, `lspconfig/lanuages` 하위의 lua 설정 파일을 일괄적으로 불러오는 코드를 작성합니다.
 ```lua
 -- ~/.config/nvim/lua/lspconfig/init.lua
@@ -38,7 +38,7 @@ for _, file in ipairs(vim.fn.readdir(config_dir, [[v:val =~ '\.lua$']])) do
 end
 ```
 
-# 공통 설정
+## 공통 설정
 `common.lua`에 공통적으로 사용할 녀석들을 만들어서 table에 담아 리턴해줍니다.
 ```lua
 -- ~/.config/nvim/lua/lspconfig/common.lua
@@ -56,7 +56,7 @@ return {
 }
 ```
 
-# 언어별 설정
+## 언어별 설정
 이제 `lspconfig/languages` 디렉토리에 언어별 설정을 분리해서 작성합니다. 아래는 `cpp`, `typescript`에 설정 대한 예시입니다.
 ```lua
 -- languages/cpp.lua
@@ -106,7 +106,7 @@ lspconfig.tsserver.setup {
 }
 ```
 
-# 플러그인 매니저 설정
+## 플러그인 매니저 설정
 이제 마지막으로 플러그인 설정에 다음과 같이 입력하면 끝!
 ```lua
   -- other plugins ..

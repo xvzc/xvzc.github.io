@@ -8,7 +8,7 @@ Github에서 샘플 프로젝트의 전체 코드를 확인할 수 있습니다.
 
 ---
 
-# Controller Advice
+## Controller Advice
 
 아래 코드는 서비스 레이어에서 발생하는 모든 예외를 처리하는 `GlobalExceptionHandler` 입니다. 개발자가 처리하지 못한 예외가 발생하는 경우, Exception 객체의 핸들러가 동작합니다. 이상적인 ****목표는 가능한 모든 예외를 핸들링 하여 `internal server error`를 응답하지 않는 것입니다.
 
@@ -67,7 +67,7 @@ public class GlobalExceptionHandler {
 }
 ```
 
-# ErrorCode
+## ErrorCode
 
 `ErrorCode` 클래스는 에러 메시지와 코드를 정의합니다.
 
@@ -125,7 +125,7 @@ Grab grab = grabRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException(ErrorCode.GRAB_NOT_FOUND));
 ```
 
-# ErrorResponse
+## ErrorResponse
 
 효율적인 에러 처리를 위해 예외 응답을 통일합니다.
 
@@ -146,7 +146,7 @@ public class ErrorResponse {
 }
 ```
 
-# 에러 객체
+## 에러 객체
 
 아래는 에러 객체의 정의입니다.
 

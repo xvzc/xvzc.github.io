@@ -9,7 +9,7 @@ Github에서 샘플 프로젝트의 전체 코드를 확인할 수 있습니다.
 
 ---
 
-# Sample
+## Sample
 
 다음은 샘플 엔티티 `USER`의 코드입니다.
 
@@ -54,7 +54,7 @@ public class User {
 
 `Password` 의 경우 해당 컬럼만의 특정한 기능이 필요합니다. 예를들면 암호화, 해싱, 단일 컬럼 업데이트 등이 이에 속합니다. 이러한 경우 새로운 클래스를 정의해서 **Embeded 컬럼**으로 사용하는 것이 좋습니다.
 
-# JPA Auditing
+## JPA Auditing
 
 JPA Auditing을 사용하면 생**성 및 수정 날짜를 직접 입력하지 않고도 자동으로 최신화** 시킬 수 있습니다. 아래는 샘플 엔티티인 Post 클래스에서 JPA Auditing을 사용한 예시입니다.
 

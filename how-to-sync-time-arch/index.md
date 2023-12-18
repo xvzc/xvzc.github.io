@@ -2,7 +2,7 @@
 
 Sometimes we get our Linux system clock out of sync. Today, we are going to take a look how to synchronize the system clock on Arch Linux.
 <!--more-->
-# Install NTP
+## Install NTP
 Firstly, we need to install and enable NTP in your operating system. By enabling NTP for your `timedatectl`, your system will be able to synchronize your local time about once every 10 minutes with remote NTP server.
 ```zsh
 $ yay -Syu ntp
@@ -10,7 +10,7 @@ $ sudo systemctl start ntpd.service
 $ sudo systemctl enable ntpd.service
 ```
 
-# Enable NTP for timedatectl
+## Enable NTP for timedatectl
 ```zsh
 $ sudo timedatectl set-ntp true
 ```

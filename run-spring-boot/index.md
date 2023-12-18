@@ -8,13 +8,13 @@ Spring Boot App을 실행하는 여러가지 방법들에 대해 소개합니다
 
 > VM Option에 새로운 포트를 입력해주면 다른 포트로 인스턴스를 한개 더 띄울 수 있습니다. `-Dserver.port=8081`
 
-# **Maven**을 활용하여 커맨드 라인에서 실행
+## **Maven**을 활용하여 커맨드 라인에서 실행
 
 ```java
 ./mvnw spring-boot:run -Dspring-boot.run.jvaArguments='-Dserver.port=9003'
 ```
 
-# 빌드를 하고 직접 실행시키는 방법
+## 빌드를 하고 직접 실행시키는 방법
 
 ```
 $ ./mvnw clean
