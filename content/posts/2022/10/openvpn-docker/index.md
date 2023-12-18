@@ -7,7 +7,7 @@ tags:
 ---
 이번 포스트에서는 `Docker`를 활용하여 OpenVPN 서버를 구축하는 방법에 대해서 알아보겠습니다.
 <!--more-->
-# 환경 변수 등록하기
+## 환경 변수 등록하기
 
 ```bash
 export OVPN_DATA="/home/{username}/openvpn"
@@ -15,7 +15,7 @@ export OVPN_DATA="/home/{username}/openvpn"
 
 ---
 
-# OpenVPN 설정 생성하기
+## OpenVPN 설정 생성하기
 
 ```bash
 docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u udp://{HOST}
@@ -23,7 +23,7 @@ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_genconfig -u u
 
 ---
 
-# CA와 서버 Key 생성하기
+## CA와 서버 Key 생성하기
 
 passphrase 없이 생성하려면 마지막에 `nopass` 옵션 추가
 
@@ -33,7 +33,7 @@ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn ovpn_initpki
 
 ---
 
-# OpenVPN 실행하기
+## OpenVPN 실행하기
 
 ```bash
 docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN kylemanna/openvpn
@@ -41,7 +41,7 @@ docker run -v $OVPN_DATA:/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN ky
 
 ---
 
-# 클라이언트 유저 생성하는 법
+## 클라이언트 유저 생성하는 법
 
 ```bash
 docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-client-full {USER_NAME} nopass
@@ -49,7 +49,7 @@ docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn easyrsa build-c
 
 ---
 
-# ovpn 파일 생성하는 법
+## ovpn 파일 생성하는 법
 
 ```bash
 docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient {USER_NAME}> {USER_NAME}.ovpn
@@ -57,7 +57,7 @@ docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient {USE
 
 ---
 
-# 클라이언트 삭제하는 법
+## 클라이언트 삭제하는 법
 
 ```bash
 docker run --rm -it -v $OVPN_DATA:/etc/openvpn kylemanna/openvpn ovpn_revokeclient {USER_NAME} remove
@@ -65,7 +65,7 @@ docker run --rm -it -v $OVPN_DATA:/etc/openvpn kylemanna/openvpn ovpn_revokeclie
 
 ---
 
-# 설정 파일 여는 법
+## 설정 파일 여는 법
 
 ```bash
 docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn vi /etc/openvpn/openvpn.conf

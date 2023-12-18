@@ -10,16 +10,16 @@ tags:
 테라폼으로 서로 다른 계정간 VPC Peering Connection을 맺을 때 `Error: Unable to modify EC2 VPC Peering Connection Options`라는 에러가 출력되는 경우가 있습니다. 이번 포스트에서는 해당 이슈의 원인과 해결 방안에 대해 알아보도록 하겠습니다.
 <!--more-->
 
-# 문제 상황
+## 문제 상황
 
 > Error: Unable to modify EC2 VPC Peering Connection Options. EC2 VPC Peering Connection(pcx-xxxxxxxxx)
 > Please set the `auto_accept` attribute to `true` or activate the EC2 VPC Peering Connection manually.
 
-# 원인
+## 원인
 
 언뜻 보기엔 단순히 `auto_accept` 옵션을 `true` 로 할당하라는 안내 메시지인 것 같지만 서로 다른 계정 사이에서는 `auto_accept` 옵션이 동작하지않습니다. 조금 더 조사를 해본 결과 inner block인 `accepter`, `requester` block이 원인이였다는 것을 알 수 있었습니다.
 
-# 해결
+## 해결
 
 몇번의 apply 실패 과정을 통해 `aws_vpc_peering_connection` 에 최소한의 옵션만 남겨두고 다 지워보았습니다.
 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/2023/12/how-to-manage-nvim-lspconfig/index.md",
+                "file": "content/posts/2021/10/boj-1074/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/2023/12/how-to-manage-nvim-lspconfig/index.md",
+                "file": "content/posts/2021/10/boj-1074/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/2023/12/how-to-manage-nvim-lspconfig/index.md",
+                "file": "content/posts/2021/10/boj-1074/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/2023/12/how-to-manage-nvim-lspconfig/index.md"
+                "file": "content/posts/2021/10/boj-1074/index.md"
               }
             }
           }
@@ -148,41 +148,42 @@
   },
   "active": "8a9793702075ab94",
   "lastOpenFiles": [
-    "templates/post-template.md",
-    "content/posts/2023/12/how-to-manage-nvim-lspconfig/index.md",
+    "content/posts/2021/10/springboot-jpa-entity/index.md",
+    "content/posts/2021/10/spring-boot-validation/index.md",
+    "content/posts/2021/10/spring-boot-service/index.md",
+    "content/posts/2021/10/spring-boot-mockito/index.md",
+    "content/posts/2021/10/spring-boot-exception/index.md",
+    "content/posts/2021/10/spring-boot-dto/index.md",
+    "content/posts/2021/10/spring-boot-controller/index.md",
+    "content/posts/2021/10/run-spring-boot/index.md",
+    "content/posts/2021/10/java-builder-pattern/index.md",
+    "content/posts/2022/12/aws-push-img-to-ecr/index.md",
+    "content/posts/2022/10/openvpn-docker/index.md",
+    "content/posts/2022/04/prog-12977/index.md",
+    "content/posts/2022/06/mysql-create-dates/index.md",
+    "content/posts/2022/01/boj-1238/index.md",
+    "content/posts/2023/02/tf-object-changed-outside/index.md",
     "content/posts/2023/02/tf-vpc-peering-err/index.md",
+    "content/posts/2023/03/aws-403-inside-vpc/index.md",
+    "content/posts/2023/11/how-to-sync-time-arch/index.md",
+    "content/posts/2023/12/how-to-manage-nvim-lspconfig/index.md",
+    "templates/post-template.md",
     "content/posts/2023/12/how-to-manage-nvim-lspconfig",
     "content/posts/2023/12/.md",
     "content/posts/2023/12",
-    "content/posts/2023/11/how-to-sync-time-arch/index.md",
-    "content/posts/2023/03/aws-403-inside-vpc/index.md",
     "Spaces/Home",
     "Spaces",
     "content/posts/2021/10/boj-2805/index.md",
     "content/posts/2023/03/aws-403-inside-vpc",
     "content/posts/2023/02/tf-vpc-peering-err",
-    "content/posts/2023/02/tf-object-changed-outside/index.md",
     "content/posts/2023/02/tf-object-changed-outside",
-    "content/posts/2022/12/aws-push-img-to-ecr/index.md",
     "content/posts/2022/12/aws-push-img-to-ecr",
-    "content/posts/2022/10/openvpn-docker/index.md",
     "content/posts/2022/10/openvpn-docker",
-    "content/posts/2022/06/mysql-create-dates/index.md",
     "content/posts/2022/06/mysql-create-dates",
     "content/posts/2022/04/prog-92334/index.md",
     "content/posts/2022/04/prog-86051/index.md",
     "content/posts/2022/04/prog-81301/index.md",
     "content/posts/2022/04/prog-77484/index.md",
-    "content/posts/2022/04/prog-76501/index.md",
-    "content/posts/2022/04/prog-72410/index.md",
-    "content/posts/2022/04/prog-70128/index.md",
-    "content/posts/2022/04/prog-67256/index.md",
-    "content/posts/2022/04/prog-64061/index.md",
-    "content/posts/2022/04/prog-42889/index.md",
-    "content/posts/2022/04/prog-42862/index.md",
-    "content/posts/2022/04/prog-42840/index.md",
-    "content/posts/2022/04/prog-42748/index.md",
-    "content/posts/2022/04/prog-42576/index.md",
     "content/posts/2023/11/how-to-sync-time-arch/image-1.png",
     "content/posts/2023/11/how-to-sync-time-arch/image.png",
     "content/posts/2023/11/how-to-sync-time-arch/Pasted image 20231114174544.png",

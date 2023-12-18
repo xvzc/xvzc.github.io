@@ -7,14 +7,14 @@ tags:
 ---
 이번 포스트에서는 AWS ECR에 도커 이미지를 Push 하는 방법에 대해서 알아봅시다.
 <!--more-->
-# Install AWS CLI
+## Install AWS CLI
 
 우선 아래 링크를 참고하여 `AWS CLI` 를 설치합니다.
 
 [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 
-# AWS CLI 설정
+## AWS CLI 설정
 
 AWS CLI에 계정정보를 설정하기 위해 다음 명령어를 실행하고 정보를 입력합니다.
 
@@ -33,7 +33,7 @@ Default output format [None]: json
 
 ---
 
-# Login to Docker
+## Login to Docker
 
 `Docker CLI` 에 로그인 하기위해 다음 명령어를 실행합니다.
 
@@ -59,7 +59,7 @@ docker images
 
 ---
 
-# Image Tag 추가
+## Image Tag 추가
 
 아래 명령어를 실행하여 해당 이미지의 태그를 설정합니다.
 
@@ -71,7 +71,7 @@ docker tag {image_id} {ECR_URI}:{TAG}
 
 ---
 
-# 이미지 Push
+## 이미지 Push
 
 마지막으로 아래 명령어를 실행하여 ECR에 push 합니다.
 
