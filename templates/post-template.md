@@ -1,11 +1,11 @@
 ---
 title: 
 date: "{{date}}"
-draft: true
-tags:
+draft: false
+tags: 
 resources:
- - src: 'image-*.png'
-   title: 'image-#:counter'
+  - src: image-*.png
+    title: image-#:counter
 ---
 
 <!--more-->
