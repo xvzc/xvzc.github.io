@@ -7,10 +7,10 @@ resources:
   - src: image-*.png
     title: image-#:counter
 ---
-
-<!--more-->
 neovim `lspconfig`는 언어별 설정이 많아짐에 따라 라인 수가 너무 길어져서 점점 감당이 안되는 경향이있어요. 이번 포스트에서는 lspconfig를 깔끔하게 관리하는 방법에 대해서 알아보겠습니다.
-디렉토리 구조는 다음과 같이 구성했습니다. 
+<!--more-->
+
+먼저, 디렉토리 구조는 다음과 같이 구성했습니다. 
 ```
 ~/.config/nvim
 ├── init.lua
