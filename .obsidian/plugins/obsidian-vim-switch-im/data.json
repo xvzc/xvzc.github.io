@@ -1,0 +1,5 @@
+{
+  "executablePath": "/opt/homebrew/bin/im-select",
+  "defaultInputMethod": "com.apple.keylayout.ABC",
+  "restorePrevious": true
+}

@@ -1,8 +1,0 @@
-{
-  "defaultIM": "com.apple.keylayout.ABC",
-  "obtainCmd": "/opt/homebrew/bin/im-select",
-  "switchCmd": "/opt/homebrew/bin/im-select {IM}",
-  "windowsDefaultIM": "",
-  "windowsObtainCmd": "",
-  "windowsSwitchCmd": ""
-}

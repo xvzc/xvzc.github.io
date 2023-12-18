@@ -9,6 +9,7 @@ tags:
 ---
 테라폼으로 서로 다른 계정간 VPC Peering Connection을 맺을 때 `Error: Unable to modify EC2 VPC Peering Connection Options`라는 에러가 출력되는 경우가 있습니다. 이번 포스트에서는 해당 이슈의 원인과 해결 방안에 대해 알아보도록 하겠습니다.
 <!--more-->
+
 # 문제 상황
 
 > Error: Unable to modify EC2 VPC Peering Connection Options. EC2 VPC Peering Connection(pcx-xxxxxxxxx)

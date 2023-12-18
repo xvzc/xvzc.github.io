@@ -1,0 +1,10 @@
+{
+	"id": "vim-switch-im",
+	"name": "Vim Switch IM",
+	"version": "0.1.6",
+	"minAppVersion": "0.15.0",
+	"description": "Demonstrates some of the capabilities of the Obsidian API.",
+	"author": "xvzc",
+	"authorUrl": "https://github.com/xvzc",
+	"isDesktopOnly": false
+}
