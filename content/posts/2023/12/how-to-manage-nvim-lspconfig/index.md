@@ -1,7 +1,7 @@
 ---
 title: Neovim lspconfig 깔끔하게 관리하기
 date: 2023-12-19T01:04:40+09:00
-draft: true
+draft: false
 tags: 
 resources:
   - src: image-*.png
