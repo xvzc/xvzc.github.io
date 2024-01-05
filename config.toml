@@ -1,4 +1,4 @@
-baseURL = "https://blog.xvzc.dev/"
+baseURL = "https://xvzc.dev/"
 
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
@@ -513,7 +513,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [sitemap]
   changefreq = "weekly"
   filename = "sitemap.xml"
-  priority = 0.5
+  priority = 0.8
 
 # Permalinks config
 [Permalinks]
