@@ -7,7 +7,32 @@
 
 2차원 적으로 접근해보겠습니다. **arr[i][j] 는 길이가 i이고 j로 끝나는 숫자의 갯수**를 의미합니다. 아래와 같이 표를 그려보면 `arr[i][j] = arr[i-1][j] + arr[i][j-1]` 이라는 점화식을 유도해 낼 수 있습니다.
 
-$\def\arraystretch{1.4}\begin{array}{|l|l|l|l|l|l|l|l|l|l|l|}\hline\textsf{\textbf{\ \\}} & \textsf{\textbf{0}} & \textsf{\textbf{1}} & \textsf{\textbf{2}} & \textsf{\textbf{3}} & \textsf{\textbf{4}} & \textsf{\textbf{5}} & \textsf{\textbf{6}} & \textsf{\textbf{7}} & \textsf{\textbf{8}} & \textsf{\textbf{9}}\\\hline\textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0}\\\hline\textsf{1} & \textsf{1\ } & \textsf{1\ } & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1}\\\hline\textsf{2} & \textsf{1} & \textsf{2} & \textsf{3} & \textsf{4} & \textsf{5} & \textsf{6} & \textsf{7} & \textsf{8} & \textsf{9} & \textsf{10}\\\hline\textsf{3} & \textsf{1} & \textsf{3} & \textsf{6} & \textsf{10} & \textsf{15} & \textsf{21} & \textsf{28} & \textsf{36} & \textsf{45} & \textsf{55}\\\hline\textsf{...} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{}\\\hline\textsf{1000} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{}\\\hline\end{array}$
+{{< raw >}}
+$$
+\def
+\arraystretch{1.4}
+\begin{array}{|l|l|l|l|l|l|l|l|l|l|l|}
+\hline
+
+\textsf{\textbf{\ \\}} & \textsf{\textbf{0}} & \textsf{\textbf{1}} & \textsf{\textbf{2}} & \textsf{\textbf{3}} & \textsf{\textbf{4}} & \textsf{\textbf{5}} & \textsf{\textbf{6}} & \textsf{\textbf{7}} & \textsf{\textbf{8}} & \textsf{\textbf{9}}\\
+
+\hline\textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0} & \textsf{0}\\
+
+\hline\textsf{1} & \textsf{1\ } & \textsf{1\ } & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1} & \textsf{1}\\
+\hline\textsf{2} & \textsf{1} & \textsf{2} & \textsf{3} & \textsf{4} & \textsf{5} & \textsf{6} & \textsf{7} & \textsf{8} & \textsf{9} & \textsf{10}\\
+
+\hline\textsf{3} & \textsf{1} & \textsf{3} & \textsf{6} & \textsf{10} & \textsf{15} & \textsf{21} & \textsf{28} & \textsf{36} & \textsf{45} & \textsf{55}\\
+
+\hline\textsf{...} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{}\\
+
+\hline\textsf{1000} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{} & \textsf{}\\
+\hline
+\end{array}
+$$
+{{< /raw >}}
+
+
+$$\begin{table}\centering\begin{tabular}{|c|l|r|r|}\hline11&12&13&14\\\hline21&22&23&24\\\hline\end{tabular}\end{table}$$
 
 ## 코드
 
@@ -54,3 +79,4 @@ int main() {
     return 0;
 }
 ```
+
